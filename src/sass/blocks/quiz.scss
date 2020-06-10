@@ -1,0 +1,12 @@
+.quiz {
+  width: 66%;
+  max-width: 1057px;
+  min-height: 534px;
+  margin: 0 auto;
+
+  background-color: $color-main;
+  background-image: url("../../img/bg-dotted.png");
+  background-size: cover;
+  box-shadow: 0 20px 40px rgba($color: $color-main--fade, $alpha: 0.3);
+  border: 1px solid rgba($color: gray, $alpha: 0.1);
+}

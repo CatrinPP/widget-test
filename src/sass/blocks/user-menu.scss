@@ -1,0 +1,91 @@
+.user-menu {
+  @include reset-list-style;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-menu__item {
+  min-width: 100px;
+  padding: 0 18px;
+
+  text-align: center;
+
+  input {
+    width: 150px;
+
+    border: none;
+    background-color: $color-main;
+
+    &::placeholder {
+      color: $color-font;
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    @media (max-width: $tablet-width) {
+      width: 100px;
+    }
+  }
+
+  a {
+    display: block;
+    min-width: 40px;
+  }
+
+  &--button a {
+    position: relative;
+    top: -7px;
+
+    padding: 7px 14px;
+
+    background-color: $color-secondary;
+    border: 1px solid rgba($color: $color-main--dark, $alpha: 0.28);
+    border-radius: 4px;
+  }
+
+  &--search {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+
+      width: 12px;
+      height: 13px;
+      background-image: url("../../img/icon-search.svg");
+    }
+
+    @media (max-width: $tablet-width) {
+      order: 1;
+    }
+  }
+
+  &--login a {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: -15px;
+
+      width: 15px;
+      height: 15px;
+
+      background-image: url("../../img/icon-login.svg");
+    }
+  }
+
+
+  @media (max-width: $tablet-width) {
+    min-width: 30px;
+
+    &:not(.user-menu__item--button),
+    input::placeholder {
+      font-size: 0;
+    }
+  }
+}

@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "editorconfig": "editorconfig-cli",
-    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "stylelint": "stylelint \"src/sass/**/*.scss\" --syntax scss",
     "eslint": "eslint src/**/*.js",
-    "test": "npm run editorconfig && npm run stylelint && npm run eslint"
+    "test": "npm run editorconfig && npm run stylelint && npm run eslint",
+    "build": "gulp css",
+    "start": "gulp start"
   },
   "repository": {
     "type": "git",
@@ -15,8 +17,15 @@
   },
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.0.0",
+    "autoprefixer": "9.8.0",
+    "browser-sync": "2.26.7",
     "eslint": "7.2.0",
     "eslint-config-htmlacademy": "0.5.2",
+    "gulp": "4.0.2",
+    "gulp-plumber": "1.2.1",
+    "gulp-postcss": "8.0.0",
+    "gulp-sass": "4.1.0",
+    "gulp-sourcemaps": "2.6.5",
     "stylelint": "13.6.0",
     "stylelint-config-htmlacademy": "0.1.4"
   }

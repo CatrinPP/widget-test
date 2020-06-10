@@ -1,0 +1,47 @@
+.site-menu {
+  @include reset-list-style;
+
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.site-menu__link {
+  min-width: 100px;
+  padding: 0 15px;
+
+  text-align: center;
+
+  span {
+    padding: 2px 4px;
+
+    font-size: 11px;
+    color: $color-secondary;
+
+    background-color: $color-main--dark;
+    border-radius: 2px;
+  }
+
+  &--active {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -18px;
+      left: 15px;
+
+      width: calc(100% - 30px);
+      height: 2px;
+      background-color: $color-main--dark;
+    }
+  }
+
+  &--blogs a {
+    padding: 7px 14px;
+
+    color: $color-main--dark;
+
+    border: 1px solid rgba($color: $color-main--dark, $alpha: 0.28);
+    border-radius: 4px;
+  }
+}

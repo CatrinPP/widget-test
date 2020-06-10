@@ -1,0 +1,17 @@
+@mixin reset-list-style {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin roboto($font, $weight, $style) {
+  @font-face {
+    font-family: "Roboto";
+    src: url("../fonts/#{$font}.woff2") format("woff2"),
+      url("../fonts/#{$font}.woff") format("woff");
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+  }
+}

@@ -1,0 +1,19 @@
+.main-nav {
+  display: flex;
+  min-height: 100px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  width: 100%;
+  padding: 18px calc(50% - 530px) 18px calc(50% - 590px);
+  margin: 0 auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main-nav__logo {
+  padding: 8px 18px;
+}

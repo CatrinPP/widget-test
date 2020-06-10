@@ -1,0 +1,25 @@
+//Цвета
+$white: #ffffff;
+$lightPink: #feebef;
+$black: #000000;
+$darkPink: #e25a76;
+$darkPink--fade: #ba4961;
+$green: #43a457;
+$blue: #00a0f6;
+
+$color-main: $lightPink;
+$color-main--dark: $darkPink;
+$color-main--fade: $darkPink--fade;
+$color-secondary: $white;
+$color-font: $black;
+$color-correct: $green;
+$color-link: $blue;
+
+//Шрифты
+$font-main: "Roboto", "Helvetica", "Arial", sans-serif;
+
+//Версии экранов
+$mobile-width: 767px;
+$tablet-width: 1023px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
