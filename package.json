@@ -1,0 +1,23 @@
+{
+  "name": "widget-test",
+  "version": "1.0.0",
+  "description": "Тест на vanilla js",
+  "main": "index.js",
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "eslint": "eslint src/**/*.js",
+    "test": "npm run editorconfig && npm run stylelint && npm run eslint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CatrinPP/widget-test.git"
+  },
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.0.0",
+    "eslint": "7.2.0",
+    "eslint-config-htmlacademy": "0.5.2",
+    "stylelint": "13.6.0",
+    "stylelint-config-htmlacademy": "0.1.4"
+  }
+}
