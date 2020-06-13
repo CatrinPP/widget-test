@@ -3,13 +3,21 @@
 
   display: flex;
   margin-bottom: 20px;
+  flex-wrap: wrap;
 }
 
 .site-menu__link {
   min-width: 100px;
   padding: 0 15px;
+  margin-bottom: 15px;
 
   text-align: center;
+
+  @media (max-width: $mobile-width) {
+    min-width: auto;
+    padding: 0;
+    margin-right: 10px;
+  }
 
   span {
     padding: 2px 4px;

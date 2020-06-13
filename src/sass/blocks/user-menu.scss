@@ -11,6 +11,10 @@
 
   text-align: center;
 
+  @media (max-width: $mobile-width) {
+    min-width: auto;
+  }
+
   input {
     width: 150px;
 
@@ -33,15 +37,27 @@
     min-width: 40px;
   }
 
-  &--button a {
-    position: relative;
-    top: -7px;
+  &--button {
+    @media (max-width: $mobile-width) {
+      padding: 0;
+      margin-bottom: 15px;
+    }
 
-    padding: 7px 14px;
+    a {
+      position: relative;
+      top: -7px;
 
-    background-color: $color-secondary;
-    border: 1px solid rgba($color: $color-main--dark, $alpha: 0.28);
-    border-radius: 4px;
+      padding: 7px 14px;
+
+
+      background-color: $color-secondary;
+      border: 1px solid rgba($color: $color-main--dark, $alpha: 0.28);
+      border-radius: 4px;
+
+      @media (max-width: $mobile-width) {
+        margin-right: 20px;
+      }
+    }
   }
 
   &--search {
@@ -55,7 +71,7 @@
 
       width: 12px;
       height: 13px;
-      background-image: url("../../img/icon-search.svg");
+      background-image: url("../img/icon-search.svg");
     }
 
     @media (max-width: $tablet-width) {
@@ -63,19 +79,21 @@
     }
   }
 
-  &--login a {
-    position: relative;
+  &--login {
+    a {
+      position: relative;
 
-    &::before {
-      position: absolute;
-      content: "";
-      top: 0;
-      left: -15px;
+      &::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: -15px;
 
-      width: 15px;
-      height: 15px;
+        width: 15px;
+        height: 15px;
 
-      background-image: url("../../img/icon-login.svg");
+        background-image: url("../img/icon-login.svg");
+      }
     }
   }
 

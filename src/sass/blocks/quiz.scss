@@ -1,12 +1,26 @@
 .quiz {
-  width: 66%;
-  max-width: 1057px;
-  min-height: 534px;
+  width: 1057px;
+  height: 534px;
   margin: 0 auto;
 
   background-color: $color-main;
-  background-image: url("../../img/bg-dotted.png");
+  background-image: url("../img/bg-dotted.png");
   background-size: cover;
   box-shadow: 0 20px 40px rgba($color: $color-main--fade, $alpha: 0.3);
   border: 1px solid rgba($color: gray, $alpha: 0.1);
+
+  @media (max-width: 1057px) {
+    width: 100vw;
+  }
+
+
+  @media (max-width: $tablet-width) {
+    width: 580px;
+    height: 480px;
+  }
+
+  @media (max-width: $mobile-width) {
+    width: 100vw;
+    height: 480px;
+  }
 }
