@@ -13,8 +13,8 @@
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-newspaper@2x.png"),
-    url("../img/bg-tinkoff@2x.png"),
-    url("../img/bg-usd@2x.png");
+      url("../img/bg-tinkoff@2x.png"),
+      url("../img/bg-usd@2x.png");
   }
 
   @media (max-width: $tablet-width) {

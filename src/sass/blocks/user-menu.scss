@@ -18,6 +18,8 @@
   input {
     width: 150px;
 
+    font-size: 14px;
+
     border: none;
     background-color: $color-main;
 
@@ -66,7 +68,7 @@
     &::before {
       position: absolute;
       content: "";
-      top: 0;
+      top: 2px;
       left: 0;
 
       width: 12px;
