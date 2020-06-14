@@ -9,10 +9,13 @@
   box-shadow: 0 20px 40px rgba($color: $color-main--fade, $alpha: 0.3);
   border: 1px solid rgba($color: gray, $alpha: 0.1);
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-dotted@2x.png");
+  }
+
   @media (max-width: 1057px) {
     width: 100vw;
   }
-
 
   @media (max-width: $tablet-width) {
     width: 580px;

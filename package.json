@@ -8,7 +8,7 @@
     "stylelint": "stylelint \"src/sass/**/*.scss\" --syntax scss",
     "eslint": "eslint src/**/*.js",
     "test": "npm run editorconfig && npm run stylelint && npm run eslint",
-    "build": "gulp css",
+    "build": "gulp images && gulp css",
     "start": "gulp start"
   },
   "repository": {
@@ -22,6 +22,7 @@
     "eslint": "7.2.0",
     "eslint-config-htmlacademy": "0.5.2",
     "gulp": "4.0.2",
+    "gulp-imagemin": "7.1.0",
     "gulp-plumber": "1.2.1",
     "gulp-postcss": "8.0.0",
     "gulp-sass": "4.1.0",

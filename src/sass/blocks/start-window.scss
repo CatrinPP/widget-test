@@ -6,13 +6,25 @@
   background-image: url("../img/bg-newspaper.png"),
     url("../img/bg-tinkoff.png"),
     url("../img/bg-usd.png");
+
+  background-size: 435px, 93px, 199px;
   background-position: right bottom, 628px 49px, 380px 260px;
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-newspaper@2x.png"),
+    url("../img/bg-tinkoff@2x.png"),
+    url("../img/bg-usd@2x.png");
+  }
 
   @media (max-width: $tablet-width) {
     padding: 25px;
 
     background-image: url("../img/bg-newspaper.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-newspaper@2x.png");
+    }
   }
 
   @media (max-width: $mobile-width) {
